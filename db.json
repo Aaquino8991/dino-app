@@ -1,16 +1,24 @@
 {
-  "toys": [
+  "dinosaurs": [
     {
       "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
+      "name": "Tyrannosaurus Rex",
+      "image": "https://www.pngmart.com/files/7/Dinosaurs-PNG-Picture.png",
+      "timePeriod": "Late Cretaceuos",
+      "diet": "Carnivore",
+      "lengthMeters": 12,
+      "weightKG": 7000,
+      "description": "Tyrannosaurus lives up to its reputation as one of the most fearsome animals of all time. Its powerful jaws had 60 teeth, each one up to 20cm (8 inches) long and its bite was around 3 times as powerful than that of a lion."
     },
     {
       "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
+      "name": "Triceratops",
+      "image": "https://www.pngmart.com/files/7/Dinosaurs-Transparent-Background.png",
+      "timePeriod": "Late Cretaceuos",
+      "diet": "Herbivore",
+      "lengthMeters": 9,
+      "weightKG": 5500,
+      "description": "With its 3 horns, a parrot-like beak and a large frill that could reach nearly 1 metre (3 feet) across, the Triceratops skull is one of the largest and most striking of any land animal. The horns could have been used to fend off attacks from Tyrannosaurus. A partial Triceratops fossil collected in 1997 has a horn that was bitten off, with bite marks that match Tyrannosaurus. The fossil shows that the horn healed after being bitten, so at least some Triceratops survived these encounters. Puncture marks on fossil frills show that male Triceratops also used their horns to fight each other, probably to impress females."
     }
   ]
 }
