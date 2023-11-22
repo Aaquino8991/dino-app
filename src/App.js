@@ -1,4 +1,4 @@
-import Home from "./Home";
+import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <Home />
+      <Outlet />
     </div>
   );
 }
