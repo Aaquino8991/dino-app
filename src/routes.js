@@ -1,9 +1,16 @@
+import App from "./App"
 import Home from "./Home"
 
 const routes = [
   {
     path: '/',
-    element: <Home />
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      }
+    ]
   }
 ]
 
