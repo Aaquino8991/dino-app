@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import DinoForm from './DinoForm'
+import DinoForm from './Create'
 import DinoCard from './DinoCard'
 
 function Dinosaurs() {
@@ -21,7 +21,6 @@ function Dinosaurs() {
 
   return(
     <div className="container">
-      <DinoForm />
       <div className="filter">
         <label htmlFor="select">
           <select name="select" value={filterOption} onChange={(e) => handleFilter(e.target.value)}>

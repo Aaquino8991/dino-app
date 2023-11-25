@@ -16,10 +16,10 @@ function NavBar() {
         Dinosaurs
       </NavLink>
       <NavLink
-        to="/about"
+        to="/create"
         className="nav-link"
       >
-        About
+        New Dino
       </NavLink>
     </nav>
   )

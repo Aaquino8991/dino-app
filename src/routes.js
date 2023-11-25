@@ -1,6 +1,6 @@
 import App from "./App"
 import Home from "./Home"
-import About from "./About"
+import Create from "./Create"
 import Dinosaurs from "./Dinosaurs"
 
 const routes = [
@@ -13,8 +13,8 @@ const routes = [
         element: <Home />
       },
       {
-        path: "/about",
-        element: <About />
+        path: "/create",
+        element: <Create />
       },
       {
         path: "/dinosaurs",
