@@ -1,23 +1,9 @@
-import { useState, useEffect } from 'react'
-import DinoCard from './DinoCard'
-
 function Home() {
-  const [dinosaurs, setDinosaurs] = useState([])
-
-  useEffect(() => {
-    fetch("http://localhost:3000/dinosaurs")
-    .then(res => res.json())
-    .then(data => setDinosaurs(data))
-    .catch(error => console.error(error))
-  }, [])
-
-  const dinoList = dinosaurs.map(dino => {
-    return <DinoCard dino={dino} key={dino.id} />
-  })
 
   return (
     <div className='container'>
-      {dinoList}
+      <h2>Welcome to Dinosaur World!</h2>
+      <p>Explore the fascinating world of dinosaurs and learn about the different time periods they lived in.</p>
     </div>
   )
 }

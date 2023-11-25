@@ -10,16 +10,16 @@ function NavBar() {
         Home
       </NavLink>
       <NavLink
-        to="/"
+        to="/dinosaurs"
+        className="nav-link"
+      >
+        Dinosaurs
+      </NavLink>
+      <NavLink
+        to="/about"
         className="nav-link"
       >
         About
-      </NavLink>
-      <NavLink
-        to="/"
-        className="nav-link"
-      >
-        Add Dino
       </NavLink>
     </nav>
   )
