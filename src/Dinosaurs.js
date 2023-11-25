@@ -21,6 +21,7 @@ function Dinosaurs() {
 
   return(
     <div className="container">
+      <DinoForm />
       <div className="filter">
         <label htmlFor="select">
           <select name="select" value={filterOption} onChange={(e) => handleFilter(e.target.value)}>

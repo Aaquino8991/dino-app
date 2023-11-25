@@ -1,14 +1,29 @@
 function DinoCard({ dinos, filterOption }) {
-  const displayData = dinos.slice().sort((a, b) => {
+
+  const groupDinosByTimePeriod = dinos.reduce((result, dino) => {
+  const timePeriod = dino.timePeriod;
+  if (!result[timePeriod]) {
+    result[timePeriod] = [];
+  }
+  result[timePeriod].push(dino);
+  return result;
+}, {});
+
+
+  const filteredData = dinos.filter(dino => {
     switch (filterOption) {
-      case 'name':
-        return a.name.localeCompare(b.name);
       case 'carnivore':
-        return a.carnivore.localeCompare(b.carnivore)
+        return dino.diet === 'Carnivore';
+      case 'herbivore':
+        return dino.diet === 'Herbivore';
+      case 'omnivore':
+        return dino.diet === 'Omnivore';
       default:
-        return 0;
+        return true;
     }
   });
+
+  const displayData = filteredData.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="card-container">
@@ -18,7 +33,7 @@ function DinoCard({ dinos, filterOption }) {
             <strong>{dino.name}</strong>
           </span>
           <div className="image">
-            <img src={dino.image} style={{ height:'100px'}}/>
+            <img src={dino.image} style={{ height: '100px' }} alt={dino.name} />
           </div>
         </div>
       ))}
@@ -26,4 +41,4 @@ function DinoCard({ dinos, filterOption }) {
   );
 }
 
-export default DinoCard
+export default DinoCard;
