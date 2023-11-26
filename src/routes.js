@@ -1,27 +1,27 @@
-import App from "./App"
-import Home from "./Home"
-import Create from "./Create"
-import Dinosaurs from "./Dinosaurs"
+import App from "./App";
+import Home from "./Home";
+import Dinosaurs from "./Dinosaurs";
+import DinoForm from "./DinoForm";
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     element: <App />,
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
-        path: "/create",
-        element: <Create />
+        path: "/new-dino",
+        element: <DinoForm />,
       },
       {
         path: "/dinosaurs",
-        element: <Dinosaurs />
-      }
-    ]
-  }
-]
+        element: <Dinosaurs />,
+      },
+    ],
+  },
+];
 
-export default routes
+export default routes;

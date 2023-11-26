@@ -16,7 +16,7 @@ function NavBar() {
         Dinosaurs
       </NavLink>
       <NavLink
-        to="/create"
+        to="/new-dino"
         className="nav-link"
       >
         New Dino

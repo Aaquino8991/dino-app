@@ -1,23 +1,23 @@
 function DinoCard({ dinos, filterOption }) {
 
   const groupDinosByTimePeriod = dinos.reduce((result, dino) => {
-  const timePeriod = dino.timePeriod;
-  if (!result[timePeriod]) {
-    result[timePeriod] = [];
-  }
-  result[timePeriod].push(dino);
-  return result;
-}, {});
+    const timePeriod = dino.timePeriod;
+    if (!result[timePeriod]) {
+      result[timePeriod] = [];
+    }
+    result[timePeriod].push(dino);
+    return result;
+  }, {});
 
 
   const filteredData = dinos.filter(dino => {
     switch (filterOption) {
       case 'carnivore':
-        return dino.diet === 'Carnivore';
+        return dino.diet === 'carnivore';
       case 'herbivore':
-        return dino.diet === 'Herbivore';
+        return dino.diet === 'herbivore';
       case 'omnivore':
-        return dino.diet === 'Omnivore';
+        return dino.diet === 'omnivore';
       default:
         return true;
     }

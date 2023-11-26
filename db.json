@@ -5,9 +5,7 @@
       "name": "Tyrannosaurus Rex",
       "image": "https://www.pngmart.com/files/7/Dinosaurs-PNG-Picture.png",
       "timePeriod": "Late Cretaceuos",
-      "diet": "Carnivore",
-      "lengthMeters": 12,
-      "weightKG": 7000,
+      "diet": "carnivore",
       "description": "Tyrannosaurus lives up to its reputation as one of the most fearsome animals of all time. Its powerful jaws had 60 teeth, each one up to 20cm (8 inches) long and its bite was around 3 times as powerful than that of a lion."
     },
     {
@@ -15,9 +13,7 @@
       "name": "Triceratops",
       "image": "https://www.pngmart.com/files/7/Dinosaurs-Transparent-Background.png",
       "timePeriod": "Late Cretaceuos",
-      "diet": "Herbivore",
-      "lengthMeters": 9,
-      "weightKG": 5500,
+      "diet": "herbivore",
       "description": "With its 3 horns, a parrot-like beak and a large frill that could reach nearly 1 metre (3 feet) across, the Triceratops skull is one of the largest and most striking of any land animal. The horns could have been used to fend off attacks from Tyrannosaurus. A partial Triceratops fossil collected in 1997 has a horn that was bitten off, with bite marks that match Tyrannosaurus. The fossil shows that the horn healed after being bitten, so at least some Triceratops survived these encounters. Puncture marks on fossil frills show that male Triceratops also used their horns to fight each other, probably to impress females."
     },
     {
@@ -25,9 +21,7 @@
       "name": "Parasaurolophus",
       "image": "https://png2.cleanpng.com/sh/30dfe4384a2ce098636bc4af4553dde1/L0KzQYq3VMI0N5lwh5H0aYP2gLBuTgBiepJ4eed7b3zygLn8k71lcZ90i9NAcj3rcbX5jCNifaNufNNuLYTrdX7tifVtbF5yReV2b3ywcbBuhfwuaZ51ied4dEWwgLL5ggMuPZRnfattN3O3SIGCUsEvQGQ6SKo5NkW0RYa8Wck3OGM9SqsAMT7zfri=/kisspng-parasaurolophus-dinosaur-hadrosauridae-the-field-m-smol-angel-ampquot5-paras-5cbe9d7c480921.8350806515559960282951.png",
       "timePeriod": "Late Cretaceuos",
-      "diet": "Herbivore",
-      "lengthMeters": 11,
-      "weightKG": 3500,
+      "diet": "herbivore",
       "description": ""
     },
     {
@@ -35,10 +29,16 @@
       "name": "Spinosaurus",
       "image": "https://png2.cleanpng.com/sh/cb145af735fe9ea0097c349d20e67b14/L0KzQYm3WMMyN5ZBfpH0aYP2gLBuTgNxcZ90i9NAcoX2PcXCkvFvdpD4eed7dYOwdLr1jCNifaMyiNH7dHHlfLa0jvV1f5D3RdZybnB9ccb5ggMueKNufdt8dHB1ebBwk71lcZ90ReV5aX7yirL8kvF0NaR1gdD4ej24comCVfQ3amU8faJsOD60RIm9V8c3PmI6S6cCMkmzQIS5WcQ1NqFzf3==/kisspng-spinosaurus-tyrannosaurus-dinosaur-portable-networ-dinozauras-prieistorinis-dino-spinozauras-spinoz-5b895d6b47e0c8.1486776615357290032944.png",
       "timePeriod": "Late Cretaceuos",
-      "diet": "Carnivore",
-      "lengthMeters": 14,
-      "weightKG": 7400,
+      "diet": "carnivore",
       "description": "Spinosaurus was a large meat-eating dinosaur from Africa. Scientists think it may have lived a semi-aquatic lifestyle.Our understanding of Spinosaurus has changed in recent years. For over 100 years we only had very incomplete remains of this dinosaur. Plus, the few bones from the first discovery in 1912 were accidentally destroyed during the Second World War."
+    },
+    {
+      "name": "sdfsdfsdfsf",
+      "image": "sdfsdfsdfsdf",
+      "timePeriod": "triassic",
+      "diet": "carnivore",
+      "description": "sdfsdfsfdsdf",
+      "id": 5
     }
   ]
 }
