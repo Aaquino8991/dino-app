@@ -7,6 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* NavBar */
+.nav {
+  background: #55cd2b;
+  height: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.nav-link:hover {
+  background: #0d460d;
+  color: white;
+}
+
+/* DinoForm */
 .form-container {
   max-width: 400px;
   margin: 0 auto;
