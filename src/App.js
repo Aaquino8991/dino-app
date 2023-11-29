@@ -12,7 +12,7 @@ function App() {
         setDinos(data);
       })
       .catch((error) => console.error(error));
-  }, []);
+  }, [dinos]);
 
   return (
     <div className="App">
