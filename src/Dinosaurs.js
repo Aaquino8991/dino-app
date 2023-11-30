@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import DinoCard from "./DinoCard";
 import { useOutletContext } from "react-router-dom";
+import DinoForm from './DinoForm'
 
 function Dinosaurs() {
   const [dinos, setDinos] = useOutletContext();
@@ -27,6 +28,7 @@ function Dinosaurs() {
         </label>
       </div>
       <DinoCard dinos={dinos} filterOption={filterOption} />
+      <DinoForm />
     </div>
   );
 }

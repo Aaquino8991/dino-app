@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 
 function DinoForm() {
 
@@ -9,7 +8,6 @@ function DinoForm() {
   const [diet, setDiet] = useState('carnivore')
   const [image, setImage] = useState('')
   const [isPending, setIsPending] = useState(false)
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -30,7 +28,6 @@ function DinoForm() {
       body: JSON.stringify(newDino)
     }).then(() => {
       setIsPending(false)
-      navigate('/dinosaurs')
     })
   }
 

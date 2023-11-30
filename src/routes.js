@@ -1,7 +1,7 @@
 import App from "./App";
 import Home from "./Home";
 import Dinosaurs from "./Dinosaurs";
-import DinoForm from "./DinoForm";
+import About from "./About"
 
 const routes = [
   {
@@ -13,8 +13,8 @@ const routes = [
         element: <Home />,
       },
       {
-        path: "/new-dino",
-        element: <DinoForm />,
+        path: "/about",
+        element: <About />,
       },
       {
         path: "/dinosaurs",

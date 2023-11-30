@@ -31,14 +31,6 @@
       "timePeriod": "Late Cretaceuos",
       "diet": "carnivore",
       "description": "Spinosaurus was a large meat-eating dinosaur from Africa. Scientists think it may have lived a semi-aquatic lifestyle.Our understanding of Spinosaurus has changed in recent years. For over 100 years we only had very incomplete remains of this dinosaur. Plus, the few bones from the first discovery in 1912 were accidentally destroyed during the Second World War."
-    },
-    {
-      "name": "Stegosaurus",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Stegosaurus_stenops_Life_Reconstruction.png",
-      "timePeriod": "triassic",
-      "diet": "herbivore",
-      "description": "Armor-plated dino!",
-      "id": 5
     }
   ]
 }
