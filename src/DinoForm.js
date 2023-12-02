@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function DinoForm() {
+function DinoForm({ updateDinos }) {
 
   const [name, setName] = useState('')
   const [description, setDescription] = useState('')
@@ -28,6 +28,7 @@ function DinoForm() {
       body: JSON.stringify(newDino)
     }).then(() => {
       setIsPending(false)
+      updateDinos(newDino)
     })
   }
 
