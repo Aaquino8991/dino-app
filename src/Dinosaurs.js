@@ -1,15 +1,27 @@
 import { useState, useEffect } from "react";
 import DinoCard from "./DinoCard";
-import { useOutletContext } from "react-router-dom";
 import DinoForm from './DinoForm'
 
 function Dinosaurs() {
-  const [dinos, setDinos] = useOutletContext();
   const [filterOption, setFilterOption] = useState("name");
+  const [dinos, setDinos] = useState([])
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/dinosaurs`)
+      .then((res) => res.json())
+      .then((data) => {
+        setDinos(data);
+      })
+      .catch((error) => console.error(error));
+  }, []);
 
   const handleFilter = (option) => {
     setFilterOption(option);
   };
+
+  const updateDinos = (newDino) => {
+    setDinos([...dinos, newDino])
+  }
 
   return (
     <div className="container">
@@ -28,7 +40,7 @@ function Dinosaurs() {
         </label>
       </div>
       <DinoCard dinos={dinos} filterOption={filterOption} />
-      <DinoForm />
+      <DinoForm updateDinos={updateDinos}/>
     </div>
   );
 }
