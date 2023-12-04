@@ -34,6 +34,8 @@ function DinoCard({ dinos, filterOption }) {
           </span>
           <div className="image">
             <img src={dino.image} style={{ height: '100px' }} alt={dino.name} />
+            <p>Time period: {dino.timePeriod}</p>
+            <p>Description: {dino.description}</p>
           </div>
         </div>
       ))}

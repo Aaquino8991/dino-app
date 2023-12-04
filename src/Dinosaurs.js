@@ -24,23 +24,25 @@ function Dinosaurs() {
   }
 
   return (
-    <div className="container">
-      <div className="filter">
-        <label htmlFor="select">
-          <select
-            name="select"
-            value={filterOption}
-            onChange={(e) => handleFilter(e.target.value)}
-          >
-            <option value="name">Name</option>
-            <option value="carnivore">Carnivore</option>
-            <option value="herbivore">Herbivore</option>
-            <option value="omnivore">Omnivore</option>
-          </select>
-        </label>
-      </div>
-      <DinoCard dinos={dinos} filterOption={filterOption} />
-      <DinoForm updateDinos={updateDinos}/>
+    <div>
+      <div className="container">
+        <div className="filter">
+          <label htmlFor="select">
+            <select
+              name="select"
+              value={filterOption}
+              onChange={(e) => handleFilter(e.target.value)}
+            >
+              <option value="name">Name</option>
+              <option value="carnivore">Carnivore</option>
+              <option value="herbivore">Herbivore</option>
+              <option value="omnivore">Omnivore</option>
+            </select>
+          </label>
+        </div>
+        </div>
+        <DinoCard dinos={dinos} filterOption={filterOption} />
+        <DinoForm updateDinos={updateDinos}/>
     </div>
   );
 }
