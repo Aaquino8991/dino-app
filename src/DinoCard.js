@@ -24,6 +24,8 @@ function DinoCard({ dinos, filterOption }) {
   }
 
   return (
+    <>
+    <strong>Click on the image for more information.</strong>
     <div className="card-container">
       {displayData.map((dino, index) => (
         <div className="card" key={dino.id}>
@@ -42,6 +44,8 @@ function DinoCard({ dinos, filterOption }) {
         </div>
       ))}
     </div>
+    </>
+    
   );
 }
 

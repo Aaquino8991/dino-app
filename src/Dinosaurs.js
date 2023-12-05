@@ -27,7 +27,7 @@ function Dinosaurs() {
     <div>
       <div className="container">
         <div className="filter">
-          <label htmlFor="select">
+          <label htmlFor="select">Filter:
             <select
               name="select"
               value={filterOption}
