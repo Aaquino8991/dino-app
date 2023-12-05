@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Dino from "./Dino";
+import DinoCard from "./DinoCard";
 import DinoForm from './DinoForm'
 
 function Dinosaurs() {
@@ -41,7 +41,7 @@ function Dinosaurs() {
           </label>
         </div>
         </div>
-        <Dino dinos={dinos} filterOption={filterOption} />
+        <DinoCard dinos={dinos} filterOption={filterOption} />
         <DinoForm updateDinos={updateDinos}/>
     </div>
   );
