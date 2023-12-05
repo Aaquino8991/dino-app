@@ -66,9 +66,13 @@ const filteredData = dinos.filter(dino => {
 ```React
  const [selectedDino, setSelectedDino] = useState(null)
 
-  //code in between
+  //code in between...
 
   const handleSelected = (index) => {
     setSelectedDino(prevSelected => (prevSelected === index ? null : index));
   }
 ```
+
+# Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
