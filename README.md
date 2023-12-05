@@ -60,3 +60,15 @@ const filteredData = dinos.filter(dino => {
 
   const displayData = filteredData.sort((a, b) => a.name.localeCompare(b.name));
 ```
+
+- Selecting and Deselecting Dinos for more information
+
+```React
+ const [selectedDino, setSelectedDino] = useState(null)
+
+  //code in between
+
+  const handleSelected = (index) => {
+    setSelectedDino(prevSelected => (prevSelected === index ? null : index));
+  }
+```
