@@ -57,5 +57,23 @@ return (
     </form>
   </div>
 )
+```
 
+- Sorting Dinos
+
+```React
+const filteredData = dinos.filter(dino => {
+    switch (filterOption) {
+      case 'carnivore':
+        return dino.diet === 'carnivore';
+      case 'herbivore':
+        return dino.diet === 'herbivore';
+      case 'omnivore':
+        return dino.diet === 'omnivore';
+      default:
+        return true;
+    }
+  });
+
+  const displayData = filteredData.sort((a, b) => a.name.localeCompare(b.name));
 ```
