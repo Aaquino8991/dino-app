@@ -24,10 +24,18 @@
 
 /* DinoCard */
 .container {
-  display: inline-block;
-  justify-content: center;
+
 }
 
+.card {
+  border-radius: 5%;
+  box-shadow: 4px 4px 6px grey;
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
+  margin: 10px;
+  padding: 3px;
+}
 
 /* DinoForm */
 .form-container {

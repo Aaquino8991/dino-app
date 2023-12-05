@@ -70,7 +70,6 @@ return (
       <label>Photo link:</label>
       <input 
         type="text" 
-        required
         value={image}
         onChange={(e) => setImage(e.target.value)}
         />
